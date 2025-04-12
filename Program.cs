@@ -47,7 +47,7 @@ class Program
             manager.Display();
 
             Console.WriteLine("\nSorted by Speed:");   
-            comparer.SortBYSpeed(manager.GetAll());
+            comparer.SortBySpeed(manager.GetAll());
             manager.Display();  
 
             Console.WriteLine("\nSorted by Type:");

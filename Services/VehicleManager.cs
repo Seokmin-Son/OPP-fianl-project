@@ -31,22 +31,6 @@ namespace Services
             return count;
         }
 
-        public void SortPrice()
-        {
-            for (int i = 0; i < count - 1; i++)
-            {
-                for (int j = i + 1; j < count; j++)
-                {
-                    if (vehicles[i].Price > vehicles[j].Price)
-                    {
-                        Vehicle temp = vehicles[i];
-                        vehicles[i] = vehicles[j];
-                        vehicles[j] = temp;
-                    }
-                }
-            }
-        }
-
         public void Display()
         {
             for (int i = 0; i < count; i++)
