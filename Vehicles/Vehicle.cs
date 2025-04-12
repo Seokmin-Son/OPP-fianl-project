@@ -3,7 +3,7 @@ using System;
 namespace Vehicles
 {
     public class Vehicle{
-        public abstract string Name {get; set;}
+        public string Name {get; set;}
         private double price;
         private double speed;
         public double Price 
@@ -43,7 +43,7 @@ namespace Vehicles
         Name = name;
         Price = price;
         Speed = speed;
-        VehicleType = vehicletype;
+        VehicleType = vehicleType;
         }
 
         public virtual void DisplayInfo(){

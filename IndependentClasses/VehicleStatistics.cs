@@ -100,7 +100,7 @@ namespace IndependentClasses
             }
 
             Console.WriteLine("Most Expensive Vehicle:");
-            mostExpensive.PrintDetails();
+            mostExpensive.DisplayInfo();
         }
 
         public void HeavyTrucks(Vehicle[] vehicles)
