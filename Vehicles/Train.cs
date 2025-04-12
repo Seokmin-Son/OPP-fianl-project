@@ -1,18 +1,12 @@
 using System;
-using Vehicles;
 
 namespace Vehicles{
     public class Train : Vehicle
     {
-        public int Units;
-        public Train(string Name, string Price, double Speed, string VehicleType, int Units) : 
-        base(Name, Price, Speed, VehicleType)
-        {
-            this.Units = Units;
-        }
+        private int units;        
         public int Units
         {
-            get { return Units;}
+            get { return units;}
             set
             {
                 if (value <= 0)
@@ -21,9 +15,14 @@ namespace Vehicles{
                 }
                 else
                 {
-                    Units = value;
+                    units = value;
                 }
             }
+        }
+        public Train(string name, double price, double speed, string vehicleType, int units) : 
+        base(name, price, speed, vehicleType)
+        {
+            Units = units;
         }
         public override void DisplayInfo()
         {

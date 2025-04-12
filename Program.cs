@@ -33,7 +33,7 @@ class Program
             Console.WriteLine("\nLoaded from file:");
             for (int i = 0; i < loadedCount; i++)
             {
-                loaded[i].PrintDetails();
+                loaded[i].DisplayInfo();
                 Console.WriteLine();
             }
 

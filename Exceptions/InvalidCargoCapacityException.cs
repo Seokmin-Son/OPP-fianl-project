@@ -1,8 +1,11 @@
 using System;
 
-class InvalidCargoCapacityException : VehicleException
+namespace Exceptions
 {
-    public InvalidCargoCapacityException(string message) : base(message)
+    public class InvalidCargoCapacityException : Exception
     {
+        public InvalidCargoCapacityException(string message) : base(message)
+        {
+        }
     }
 }

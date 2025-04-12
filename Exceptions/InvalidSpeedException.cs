@@ -1,8 +1,11 @@
 using System;
 
-class InvalidSpeedException : VehicleException
+namespace Exceptions
 {
-    public InvalidSpeedException(string message) : base(message)
+    public class InvalidSpeedException : Exception
     {
+        public InvalidSpeedException(string message) : base(message)
+        {
+        }
     }
 }

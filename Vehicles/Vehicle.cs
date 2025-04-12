@@ -3,7 +3,9 @@ using System;
 namespace Vehicles
 {
     public class Vehicle{
-        public string Name {get; set;}
+        public abstract string Name {get; set;}
+        private double price;
+        private double speed;
         public double Price 
         {
             get{return price;}
@@ -36,7 +38,7 @@ namespace Vehicles
         }
         public string VehicleType {get; set;}
 
-        public Vehicle(string Name, string Price, double Speed, string VehicleType)
+        public Vehicle(string name, double price, double speed, string vehicleType)
         {
         Name = name;
         Price = price;
@@ -44,7 +46,7 @@ namespace Vehicles
         VehicleType = vehicletype;
         }
 
-        public void DisplayInfo(){
+        public virtual void DisplayInfo(){
             Console.WriteLine($"Name: {Name}");
             Console.WriteLine($"Price: {Price}");
             Console.WriteLine($"Speed: {Speed}");

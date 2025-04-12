@@ -1,8 +1,11 @@
 using System;
 
-class InvalidPriceException : VehicleException
+namespace Exceptions
 {
-    public InvalidPriceException(string message) : base(message)
+    public class InvalidPriceException : Exception
     {
+        public InvalidPriceException(string message) : base(message)
+        {
+        }
     }
 }

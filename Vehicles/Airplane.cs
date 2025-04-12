@@ -28,7 +28,7 @@ namespace Vehicles
         public override void DisplayInfo()
         {
             base.DisplayInfo();
-            Console.WriteLine("Altitude: " + Altitude);
+            Console.WriteLine($"Altitude: {Altitude}");
         }
 
         public override double CalculateTax()

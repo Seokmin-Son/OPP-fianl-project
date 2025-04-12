@@ -8,7 +8,7 @@ namespace Services
         private Vehicle[] vehicles = new Vehicle[100];
         private int count = 0;
 
-        public void AddVehicle(Vehicle v)
+        public void Add(Vehicle v)
         {
             if (count < vehicles.Length)
             {
@@ -21,17 +21,17 @@ namespace Services
             }
         }
 
-        public Vehicle[] GetVehicles()
+        public Vehicle[] GetAll()
         {
             return vehicles;
         }
 
-        public int GetCount()
+        public int Count()
         {
             return count;
         }
 
-        public void SortByPrice()
+        public void SortPrice()
         {
             for (int i = 0; i < count - 1; i++)
             {

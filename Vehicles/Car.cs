@@ -1,39 +1,31 @@
 using System;
-using Vehicles;
 
 namespace Vehicles{
     public class Car : Vehicle
     {
-        public string Model;
+        public string Model{get; set;}
+        private int horesePower;
         public int HoresePower;
-        public Car(string Name, string Price, double Speed, string VehicleType, string Model, int HoresePower) : 
-        base(Name, Price, Speed, VehicleType)
         {
-            this.Model = Model;
-            this.HoresePower = HoresePower;
-        }
-        public string GetModel()
-        {
-            return Model;
-        }
-        public void SetModel(string model)
-        {
-            Model = model;
-        }
-        public int HoresePower
-        {
-            get { return HoresePower;}
+            get { return horesePower; }
             set
             {
                 if (value < 0)
                 {
-                    throw new Exception("Horse power cannot be nagative.");
+                    throo new Exception("Horse power cannot be nagative.");
                 }
                 else
                 {
-                    HoresePower = value;
+                    horesePower = value;
                 }
             }
+        }
+
+        public Car(string name, double price, double speed, string vehicleType, string model, int horesePower) : 
+        base(name, price, speed, vehicleType)
+        {
+            this.Model = model;
+            this.HoresePower = horesePower;
         }
         public override void DisplayInfo()
         {

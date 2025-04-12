@@ -1,18 +1,12 @@
 using System;
-using Vehicles;
 
 namespace Vehicles{
     public class CargoAirplane : Airplane
     {
-        public int CargoCapacity;
-        public CargoAirplane(string Name, string Price, double Speed, string VehicleType, int Altitude, int CargoCapacity) : 
-        base(Name, Price, Speed, VehicleType, Altitude)
-        {
-            this.CargoCapacity = CargoCapacity;
-        }
+        private int cargoCapacity;
         public int CargoCapacity
         {
-            get { return CargoCapacity;}
+            get { return cargoCapacity;}
             set
             {
                 if (value < 0 || value > 10000)
@@ -21,10 +15,16 @@ namespace Vehicles{
                 }
                 else
                 {
-                    CargoCapacity = value;
+                    cargoCapacity = value;
                 }
             }
         }
+        public CargoAirplane(string name, double price, double speed, string vehicleType, int altitude, int cargoCapacity) : 
+        base(name, price, speed, vehicleType, altitude)
+        {
+            CargoCapacity = cargoCapacity;
+        }
+
         public override void DisplayInfo()
         {
             base.DisplayInfo();

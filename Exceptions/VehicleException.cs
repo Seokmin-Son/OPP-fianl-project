@@ -1,8 +1,11 @@
 using System;
 
-class VehicleException : Exception
+namespace Exceptions
 {
-    public VehicleException(string message) : base(message)
+    public class VehicleException : Exception
     {
+        public VehicleException(string message) : base(message)
+        {
+        }
     }
 }

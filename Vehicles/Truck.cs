@@ -1,15 +1,9 @@
 using System;
-using Vehicles;
 
 namespace Vehicles{
     public class Truck : Vehicle
     {
-        public int loadCapacity;
-        public Truck(string Name, string Price, double Speed, string VehicleType, int loadCapacity) : 
-        base(Name, Price, Speed, VehicleType)
-        {
-            this.loadCapacity = loadCapacity;
-        }
+        private int loadCapacity;
         public int LoadCapacity
         {
             get { return loadCapacity;}
@@ -24,11 +18,16 @@ namespace Vehicles{
                     loadCapacity = value;
                 }
             }
+        } 
+        public Truck(string name, double price, double speed, string vehicleType, int loadCapacity) : 
+        base(name, price, speed, vehicleType)
+        {
+            LoadCapacity = loadCapacity;
         }
         public override void DisplayInfo()
         {
             base.DisplayInfo();
-            Console.WriteLine($"Load Capacity: {loadCapacity}");
+            Console.WriteLine($"Load Capacity: {LoadCapacity}");
         }
         public override double CalculateTax(){
             return Price * 0.20;
