@@ -41,7 +41,7 @@ namespace IndependentClasses
             if (fastest != null)
             {
                 Console.WriteLine("Fastest " + type + ":");
-                fastest.PrintDetails();
+                fastest.DisplayInfo();
             }
             else
             {
