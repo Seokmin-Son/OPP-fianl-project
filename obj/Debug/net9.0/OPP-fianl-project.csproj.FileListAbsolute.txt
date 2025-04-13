@@ -1,0 +1,15 @@
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.AssemblyInfoInputs.cache
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.AssemblyInfo.cs
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.csproj.CoreCompileInputs.cache
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.sourcelink.json
+C:\Users\tjral\Desktop\OPP-fianl-project\bin\Debug\net9.0\OPP-fianl-project.exe
+C:\Users\tjral\Desktop\OPP-fianl-project\bin\Debug\net9.0\OPP-fianl-project.deps.json
+C:\Users\tjral\Desktop\OPP-fianl-project\bin\Debug\net9.0\OPP-fianl-project.runtimeconfig.json
+C:\Users\tjral\Desktop\OPP-fianl-project\bin\Debug\net9.0\OPP-fianl-project.dll
+C:\Users\tjral\Desktop\OPP-fianl-project\bin\Debug\net9.0\OPP-fianl-project.pdb
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.dll
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\refint\OPP-fianl-project.dll
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.pdb
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\OPP-fianl-project.genruntimeconfig.cache
+C:\Users\tjral\Desktop\OPP-fianl-project\obj\Debug\net9.0\ref\OPP-fianl-project.dll

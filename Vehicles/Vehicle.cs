@@ -1,8 +1,9 @@
 using System;
+using Exceptions;
 
 namespace Vehicles
 {
-    public class Vehicle{
+    public abstract class Vehicle{
         public string Name {get; set;}
         private double price;
         private double speed;

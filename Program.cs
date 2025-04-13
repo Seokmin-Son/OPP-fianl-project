@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Vehicles;
 using Services;
 using IndependentClasses;
@@ -19,7 +19,7 @@ class Program
             manager.Add(new Car("Avante", 20000, 180, "Car", "Modern", 120));
             manager.Add(new Truck("Volvo Truck", 80000, 120, "Truck", 15000));
             manager.Add(new Boat("Sailor", 30000, 60, "Boat", 8));
-            manager.Add(new RaceCar("F1 Racer", 150000, 320, "Car", "VMax", 500, true));
+            manager.Add(new RaceCar("F1 Racer", 150000, 320, "RaceCar", "VMax", 500, true));
             manager.Add(new Train("Bullet", 500000, 280, "Train", 12));
 
             Console.WriteLine("\nTest cases for exceptionos");
@@ -41,18 +41,22 @@ class Program
             } catch (InvalidCargoCapacityException ex) {
                 Console.WriteLine("[Cargo Capacity Error] " + ex.Message);
             }
+            Console.WriteLine("==============================");
 
             Console.WriteLine("\nSorted by Price:");
-            manager.SortByPrice();
+            comparer.SortByPrice(manager.GetAll());
             manager.Display();
+            Console.WriteLine("==============================");
 
             Console.WriteLine("\nSorted by Speed:");   
             comparer.SortBySpeed(manager.GetAll());
             manager.Display();  
+            Console.WriteLine("==============================");
 
             Console.WriteLine("\nSorted by Type:");
             comparer.SortByType(manager.GetAll());
             manager.Display();
+            Console.WriteLine("==============================");
 
             handler.Save(manager.GetAll(), manager.Count());
             Console.WriteLine("\nSaved to vehicles.txt");
@@ -66,14 +70,21 @@ class Program
                 loaded[i].DisplayInfo();
                 Console.WriteLine();
             }
+            Console.WriteLine("==============================");
 
             Console.WriteLine("\nStatistics:");
             stats.AveragePrice(manager.GetAll());
+            Console.WriteLine("==============================");
             stats.TypeCounts(manager.GetAll());
+            Console.WriteLine("==============================");
             stats.FastestByType(manager.GetAll(), "Car");
+            Console.WriteLine("==============================");
             stats.FastVehicles(manager.GetAll());
+            Console.WriteLine("==============================");
             stats.MostExpensive(manager.GetAll());
+            Console.WriteLine("==============================");
             stats.HeavyTrucks(manager.GetAll());
+            Console.WriteLine("==============================");
         }
         catch (InvalidPriceException ex)
         {

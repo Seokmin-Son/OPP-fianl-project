@@ -1,4 +1,5 @@
 using System;
+using Exceptions;
 
 namespace Vehicles{
     public class RaceCar : Car

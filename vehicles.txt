@@ -1,0 +1,5 @@
+Boat,Sailor,30000,60,Boat
+Car,Avante,20000,180,Car
+RaceCar,F1 Racer,150000,320,RaceCar
+Train,Bullet,500000,280,Train
+Truck,Volvo Truck,80000,120,Truck
