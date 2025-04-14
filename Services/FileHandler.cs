@@ -4,15 +4,18 @@ using Vehicles;
 
 namespace Services
 {
+    //Class for handling file operations (saving and loading vehicles)
     public class FileHandler
     {
         private string filePath = "vehicles.txt";
-
+        
+        //Save vehicles to a file
         public void Save(Vehicle[] vehicles, int count)
         {
             StreamWriter writer = null;
             try
             {
+                //Format: Type,Name,Price,Speed,VehicleType
                 writer = new StreamWriter(filePath);
                 for (int i = 0; i < count; i++)
                 {
@@ -34,6 +37,7 @@ namespace Services
             }
             finally
             {
+                //Ensure the fille is properly closed
                 if (writer != null)
                 {
                     writer.Close();
@@ -41,19 +45,23 @@ namespace Services
             }
         }
 
+        //Load vehicles from a file
         public Vehicle[] Load(out int count)
         {
             count = 0;
-
+            
+            //Check if file exists
             if (!File.Exists(filePath))
             {
                 Console.WriteLine("File not found.");
                 return new Vehicle[100];
             }
-
+            
+            //Read all lines from the file
             string[] lines = File.ReadAllLines(filePath);
             Vehicle[] vehicles = new Vehicle[100];
-
+            
+            //Process each line and create appropriate vehicle objects
             foreach (string line in lines)
             {
                 string[] parts = line.Split(',');
@@ -65,6 +73,7 @@ namespace Services
                     double speed = Convert.ToDouble(parts[3]);
                     string vehicleType = parts[4];
 
+                    //Create appropriate vehicle type based on the saved type
                     if (type == "Car")
                         vehicles[count++] = new Car(name, price, speed, vehicleType, "DefaultModel", 100);
                     else if (type == "Truck")

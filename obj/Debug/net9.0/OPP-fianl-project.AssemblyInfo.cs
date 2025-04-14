@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OPP-fianl-project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56e4ff5ac85faacd7b83d78e03643f879538c63a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b5801da16ffdc5f716ec9a3ce7ae43903dcf3eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("OPP-fianl-project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OPP-fianl-project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
